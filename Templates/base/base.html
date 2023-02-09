@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %} Document {% endblock %}</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	{% block header %}
+	{% include 'base/header.html' %} 
+	{% endblock %}
+
+	{% block content %}
+	<h5>Este es el contenido del archivo base</h5>
+	{% endblock %}
+
+	{% block footer %}
+	<h5> soy el footer del base</h5> 
+	{% endblock %}
+
+	
+</body>
+</html>
